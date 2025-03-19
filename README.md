@@ -78,7 +78,18 @@ docker pull 본인DockerHubID/이미지이름:1.0
 ```bash
 docker run -p 8080:8080 본인DockerHubID/이미지이름:1.0
 ```
+
+### 컨테이너 실행 확인
+
+![image](https://github.com/user-attachments/assets/2f098a50-ca0e-40b9-9380-2c6bab10036d)
+
+
 ✅ **포트 8080을 매핑하여 `http://localhost:8080`에서 접속 가능!** 🚀
+
+### **웹 접속 성공 화면**
+
+![image](https://github.com/user-attachments/assets/ebf1201c-a712-4a0e-b8b0-ed262b605988)
+
 
 <br>
 
