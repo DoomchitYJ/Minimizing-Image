@@ -64,6 +64,7 @@ docker push 본인DockerHubID/이미지이름:1.0
 ```
 ✅ 이제 `본인DockerHubID/이미지이름:1.0`으로 어디서든 `pull` 가능!
 
+>https://hub.docker.com/r/doodoomchit/myspring/tags
 
 ### **3️⃣ Download Image from Docker Hub (on other PC)**
 ```bash
