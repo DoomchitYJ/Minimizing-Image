@@ -1,14 +1,13 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=000000&height=300&section=header&text=Minimizing-Docker-Image-Size&fontSize=50&fontColor=FFFFFF&animation=fadeIn&width=1200" width="1200" />
 
 <br>
-<br>
 
 ## **📌 Contributors**
 <br>
 
 |<img src="https://github.com/DoomchitYJ.png" width="220" />|<img src="https://github.com/Jeongho427.png" width="220" />|
 |:-:|:-:|
-|박영진<br/>[@DoomchitYJ](https://github.com/DoomchitYJ)%7C박정호<br/>[@Jeongho427](https://github.com/Jeongho427)%7C
+|박영진<br/>[@DoomchitYJ](https://github.com/DoomchitYJ)|박정호<br/>[@Jeongho427](https://github.com/Jeongho427)|
 
 <br>
 
@@ -44,7 +43,7 @@ CMD ["java", "-jar", "step01_basic-0.0.1-SNAPSHOT.jar", "--server.port=8080"]
 - **포트 8080에서 실행되도록 설정**
 - **JDK 없이 JRE만으로 `.jar` 실행 가능** (JRE는 `java -jar` 실행만 지원)
 
----
+<br>
 
 ## **📌 Docker Image Build & Execute**
 ### **1️⃣ Docker Image Build**
@@ -53,7 +52,6 @@ docker build -t 본인DockerHubID/이미지이름:1.0 .
 ```
 ✅ **이 명령어는 `본인DockerHubID/이미지이름:1.0`이라는 태그를 가진 이미지를 생성합니다.**
 
----
 
 ### **2️⃣ Upload on Docker Hub**
 **1. Docker Hub 로그인**
@@ -66,7 +64,6 @@ docker push 본인DockerHubID/이미지이름:1.0
 ```
 ✅ 이제 `본인DockerHubID/이미지이름:1.0`으로 어디서든 `pull` 가능!
 
----
 
 ### **3️⃣ Download Image from Docker Hub (on other PC)**
 ```bash
@@ -74,7 +71,6 @@ docker pull 본인DockerHubID/이미지이름:1.0
 ```
 ✅ **Docker Hub에서 이미지를 내려받아 사용할 수 있음!**
 
----
 
 ### **4️⃣ Execute Container**
 #### ✅ **포트 매핑하여 실행**
@@ -83,7 +79,7 @@ docker run -p 8080:8080 본인DockerHubID/이미지이름:1.0
 ```
 ✅ **포트 8080을 매핑하여 `http://localhost:8080`에서 접속 가능!** 🚀
 
----
+<br>
 
 ## **⚠️ Troubleshooting**
 ### **Q1: Docker 컨테이너 실행 후 브라우저에서 접속이 안 됩니다.**
@@ -101,7 +97,7 @@ docker run -p 8080:8080 본인DockerHubID/이미지이름:1.0
 ```
 ✅ **이제 `http://localhost:8080`에서 애플리케이션에 접근 가능!**
 
----
+<br>
 
 ## **📌 Conclusion**
 - ✅ **JDK 없이 JRE만 포함된 경량화된 Docker 이미지 사용 (`eclipse-temurin:17-jre-alpine`)**
