@@ -1,5 +1,15 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=000000&height=300&section=header&text=Minimizing-Docker-Image-Size&fontSize=50&fontColor=FFFFFF&animation=fadeIn&width=1200" width="1200" />
 
+
+## **📌 Overview**
+이 프로젝트는 **Spring Boot 애플리케이션**을 **최적화된 Docker 이미지로 패키징**하여 실행하기 위한 환경을 구성합니다.
+
+✅ 불필요한 패키지를 제거하고 가벼운 환경을 유지하여 최적화된 컨테이너를 제공합니다.
+
+✅ JDK 없이 JRE만 포함하여 컨테이너 크기를 최소화하고 배포 속도를 향상시킵니다.
+
+✅ 최적화된 Dockerfile을 활용하여 실행 속도와 리소스 사용량을 효율적으로 관리합니다.
+
 <br>
 
 ## **📌 Contributors**
@@ -11,11 +21,15 @@
 
 <br>
 
-## **📌 Overview**
-이 프로젝트는 **Spring Boot 기반 애플리케이션**을 **Docker 컨테이너**에서 실행하기 위한 환경을 구성합니다.  
-- 🚀 **경량화된 JRE 기반 Docker 이미지 (`eclipse-temurin:17-jre-alpine`) 사용**
-- 🚀 **컨테이너 내에서 Java 애플리케이션(`.jar`) 실행만 수행 (JDK 불필요)**
-- 🚀 **최적화된 컨테이너 크기로 배포 속도 향상**
+## **📌 Optimization Strategy**
+
+🚀 경량화된 JRE 기반 Docker 이미지 (eclipse-temurin:17-jre-alpine) 사용 → 불필요한 개발 도구 제거
+
+🚀 최소한의 패키지만 포함하여 컨테이너 크기 절감 → 빌드 및 배포 속도 향상
+
+🚀 JDK 대신 JRE 사용하여 Java 실행 환경만 유지 → 메모리 사용량 감소
+
+✅ 결과적으로, 더 작은 이미지 크기와 더 빠른 배포 속도를 제공하며, 운영 비용도 절감할 수 있음! 🚀
 
 <br>
 
